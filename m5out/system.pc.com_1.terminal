@@ -1,0 +1,24 @@
+Loading new script...
+pfn: 0x7ff40
+pfn: 0x1080
+pfn: 0x10c0
+pfn: 0x7fe00
+pfn: 0x7fe40
+pfn: 0x7fe80
+pfn: 0x7fec0
+pfn: 0x3100
+pfn: 0x3140
+trojan_addr at 0x7f6db4071010
+--->set affinity of trojan thread : 1
+--->set affinity of spy thread : 2
+--->set affinity of main thread : 0
+3880
+2966
+1993
+621
+1993
+628
+1994
+621
+1994
+621

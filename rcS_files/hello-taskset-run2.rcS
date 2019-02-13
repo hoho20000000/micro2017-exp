@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# File to run the x264 benchmark
+
+cd /parsec/
+#/sbin/m5 dumpstats
+#/sbin/m5 resetstats
+taskset 0x4 ./hello2 10&
+taskset 0x2 ./hello2 10
+echo "Done :D"
+/sbin/m5 exit
+/sbin/m5 exit

@@ -1,0 +1,2 @@
+#!/bin/bash
+../gem5-caco/build/X86_MESI_Two_Level/gem5.opt   -d $GEM5_OUT/blackscholes-test-micro2017 ../gem5-caco/configs/example/fs.py --kernel=x86_64-vmlinux-2.6.28.4-smp -n 8  --cpu-type=timing --l1d_size=32kB --l1i_size=32kB --l1d_assoc=2 --l1i_assoc=2 --l2_size=2MB --l2_assoc=8 --num-l2caches=1 --ruby --garnet=flexible --checkpoint-dir=./os_ckpt/ -r 1 --restore-with-cpu=timing --script=./rcS_files/blackscholes_8c_simsmall.rcS

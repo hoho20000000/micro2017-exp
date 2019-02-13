@@ -1,0 +1,25 @@
+set terminal pdfcairo enhanced color dashed font "Helvetica,18" #size 18, 10 
+set output "bar_chart_output.pdf"
+set boxwidth 0.9 absolute
+set style fill   solid 1.00 border lt -1
+set key inside right top vertical Right noreverse noenhanced autotitle nobox
+set style histogram clustered gap 5 title textcolor lt -1
+#set datafile missing '-'
+set style data histograms
+set xtics border in scale 0,0 nomirror rotate by -45  autojustify
+#set xtics  norangelimit
+#set xtics   ()
+set title "US immigration from Northern Europe\n(same plot with larger gap between clusters)" 
+set yrange [ 0: * ] noreverse nowriteback
+
+#syntax for xlabel
+##set xlabel {"<label>"} {offset <offset>} {font "<font>{,<size>}"}
+##           {{textcolor | tc} {lt <line_type> | default}} {{no}enhanced}
+##		   {rotate by <degrees>}
+
+## Last datafile plotted
+plot 'clustered_bar.dat' using 2:xtic(1) title col, \
+             '' using 3:xtic(1) title col, \
+             '' using 4:xtic(1) title col, \
+             '' using 5:xtic(1) title col, \
+             '' using 6:xtic(1) title col

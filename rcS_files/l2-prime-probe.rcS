@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# File to run the x264 benchmark
+
+cd /parsec/
+./l2pp-two-threads

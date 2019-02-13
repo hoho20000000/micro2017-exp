@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# File to run the x264 benchmark
+
+cd /parsec/
+./c5-trojan 1 &
+echo trojan
+./c5-spy    2 & 
+echo spy
